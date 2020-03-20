@@ -1,0 +1,398 @@
+$color-orange-dark: #DF411C;
+$color-red-dark: #690505;
+$color-blue-dark: #295079;
+$color-grey-dark: #47545C;
+$color-green-dark: #335C3E; //lighten(#182B1D, 15%);
+
+$color-orange: #EF754E;
+$color-red: #DF7361;
+$color-blue: #007BB8;
+$color-grey: #C4C4C4;
+$color-dark: #C4C4C4;
+$color-green: #66B65D;
+
+$color-orange-light: #FFD8B5;
+$color-red-light: #ECABA1;
+$color-blue-light: #D5F1FF;
+$color-grey-light: #EBEBEB;
+$color-dark-light: #C4C4C4;
+$color-green-light: #E9E9C9;
+
+/* dark colors*/ 
+.color{
+	&-orange-dark{
+		background-color: $color-orange-dark;
+		color: #FFF;
+	}
+
+	&-grey-dark{
+		background-color: $color-grey-dark;
+		color: #FFF
+	}
+
+	&-blue-dark{
+		background-color: $color-blue-dark;
+		color: #FFF
+	}
+
+	&-red-dark{
+		background-color: $color-red-dark;
+		color: #FFF
+	}
+
+	&-green-dark{
+		background-color: $color-green-dark;
+		color: #FFF
+	}
+
+	/* natural colors */
+	&-orange{
+		background-color: $color-orange;
+		color: #FFF;
+	}
+
+	&-grey{
+		background-color: $color-grey;
+		color: #FFF
+	}
+
+	&-blue{
+		background-color: $color-blue;
+		color: #FFF
+	}
+
+	&-dark{
+		background-color: $color-dark;
+		color: #FFF
+	}
+
+	&-red{
+		background-color: $color-red;
+		color: #FFF
+	}
+
+	&-green{
+		background-color: $color-green;
+		color: #FFF
+	}
+
+	/* light colors*/
+	&-orange-light{
+		background-color: $color-orange-light;
+		color: $color-orange-dark;
+	}
+
+	&-grey-light{
+		background-color: $color-grey-light;
+		color: $color-grey-dark
+	}
+
+	&-blue-light{
+		background-color: $color-blue-light;
+		color: $color-blue-dark
+	}
+
+	&-dark-light{
+		background-color: $color-dark-light;
+		color: #FFF
+	}
+
+	&-red-light{
+		background-color: $color-red-light;
+		color: $color-red-dark
+	}
+
+	&-green-light{
+		background-color: $color-green-light;
+		color: $color-green-dark;
+	}	
+}
+html{
+	font-family: 'Open Sans', sans-serif;
+	color: #6b717f;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	font-size: .9rem;
+	line-height: 1.5;
+	max-width: none;
+	padding: 2rem;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1{
+	font-size: 1.5rem;
+	color: $color-orange;
+	border-bottom: solid 1px #f0f0f0
+}
+
+h2{
+	font-size: 1.2rem;
+	color: $color-grey-dark;	
+}
+
+h3{
+	font-size: 1rem
+}
+
+section{
+	width: 100%;
+	display: inline-block;
+	background: #fafafa;
+	padding:10px 20px;
+}
+
+/* Images*/
+figure{
+	width: 10rem;
+	height: 8rem;
+	padding: 0;
+	margin: 0;
+	margin-right: 5px;
+	border: solid 1px #ccc;
+	position:relative;
+	float: left;
+	
+	figcaption {
+		position:absolute;
+		bottom: 30%;
+		width: 100%;
+		text-align: center;
+		font-size:1.1rem
+	}
+	
+	&.simple-image{
+		border: solid 1px $color-grey;
+		box-shadow: 0px 0px 1px 2px $color-grey-light;
+	}
+	
+	&.profile-image{
+		border: solid 1px $color-grey;
+		box-shadow: 0px 0px 1px 2px $color-grey-light;
+		border-radius:50%;
+		width:7.5rem;
+		height:8em;
+		overflow:hidden
+	}
+	
+	&.other-image{
+		border: solid 1px $color-blue;
+		box-shadow: 0 0px 2px;
+	}
+}
+
+input[type="text"], input[type="password"], textarea{
+	padding: .5rem .8rem;
+	border-radius: 5px;
+	border: solid 1px $color-grey;
+	color: $color-grey-dark;
+	box-shadow: 0px 0px 1px 2px $color-grey-light;
+	
+	&:focus, &.focus{
+		box-shadow: 0px 0px 1px 1px $color-grey;
+		color: $color-grey-dark;
+		outline: none;
+		border: solid 1px $color-blue;
+	}
+		
+	&:disabled{
+		opacity:.8
+	}
+	
+	&.validation-ok{
+		border: solid 1px $color-green;
+	}
+	
+	&.validation-fail{
+		border: solid 1px $color-red;
+	}
+}
+
+textarea{
+	min-width: 24.2rem;
+	min-height: 7rem;
+	line-height: 1.5rem;
+	color: $color-grey-dark
+}
+
+/* buttons */
+input[type="button"]{
+	padding: .4rem .8rem;
+	color: $color-grey-dark;
+	border-radius: 3px;
+	border: solid 1px $color-grey;
+	
+	&.accept{
+		background-color: $color-orange;
+		color: #fff;
+		border: solid 2px  $color-orange;
+	}
+	
+	&.cancel{
+		background-color: $color-grey;
+		color: #fff;
+		border: solid 2px  $color-grey;
+	}
+	
+	&.remove{
+		background-color: $color-red-dark;
+		color: #fff;
+		border: solid 2px  $color-red-dark;
+	}
+	
+	&:hover, &.hover{
+		box-shadow: 0px 0px 1px 2px $color-grey;
+		cursor:pointer;
+	}
+	
+	&:disabled{
+		opacity:.5;
+		cursor:default;
+		
+		&:hover{
+			box-shadow:none;
+		}
+	}
+	
+	&:focus, &.focus{
+		box-shadow: 0px 0px 1px 1px $color-blue;
+	}
+}
+
+/* validation message bar*/
+
+.message-bar{
+	border: solid 1px $color-grey;
+	padding:.8rem 1rem;
+	background-color: $color-grey-light;
+	border-radius: .3em;
+	font-weight: bolder;
+	
+	&.fail{
+		background-color: $color-red;
+		color: white;
+	}
+	
+	&.info{
+		background-color: $color-blue;
+		color: $color-blue-light;
+	}
+	
+	&.warning{
+		background-color: $color-green-light;
+		color: $color-green-dark;		
+	}
+	&.success{
+		background-color: $color-green;
+		color: white;
+	}
+}
+
+pre {
+  color: #ddd;
+  background-color: #000;
+  padding:0 1rem 1rem;
+	font-size:.7rem;
+	width:100%;
+	margin: 15px 0 15px 0;
+	display:inline-block;
+}
+
+code span {
+  color:$color-grey-light;
+	text-align:left;
+}
+
+/* Layout */
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+
+.main {
+  text-align: left;
+}
+
+.aside-1, header, footer, .main {
+  border: solid 1px;
+	margin: 2px
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .footer  { order: 4; }
+}
+
+
+/* auxiliar classes */
+.align-right{
+	text-align: right;
+}
+
+
+
+$base-font-size: 1em; // 16px 
+$min-font-size: 1em;
+$max-font-size: 2em;
+$min-viewport-width: 48em;
+$max-viewport-width: 120em;
+/*
+$fontSizeDifference: $max-font-size - $min-font-size;
+$viewportWidthDifference: $max-viewport-width - $min-viewport-width;
+$font-size-variation: 1.5rem; // (100 * @fontSizeDifference / @viewportWidthDifference); // needs to be calculated manually of strip units with function in sass or less
+
+$font-size: calc($base-font-size + ((1vw - $min-viewport-width / 100) * $font-size-variation));*/
+/*
+@media (min-width: $min-viewport-width) {
+	:root {
+		font-size: calc(.8rem + ((1vw - 0.48rem) * .4));
+	}
+}
+
+@media (min-width: $max-viewport-width) {
+	:root {
+		font-size: $max-font-size;
+	}
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (   min--moz-device-pixel-ratio: 1.25),
+only screen and (        min-device-pixel-ratio: 1.25),
+only screen and (                min-resolution: 1.25dppx){
+    :root {
+			font-size: calc($font-size / 1.25);
+		}
+} 
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (   min--moz-device-pixel-ratio: 1.5),
+only screen and (        min-device-pixel-ratio: 1.5),
+only screen and (                min-resolution: 1.5dppx){
+    :root {
+			font-size: calc($font-size / 1.5);
+		}
+}*/
