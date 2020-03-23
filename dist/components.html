@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../dist/assets/css/styles.css">
+<link href="./assets/css/styles.css" rel="stylesheet"></head>
+
+<body>
+    <h1>StyleGuide</h1>
+
+    <h2>Dark Colors</h2>
+    <section>
+        <figure class="color-orange-dark">
+            <figcaption>Dark Orange <br /> #DF411C</figcaption>
+        </figure>
+
+        <figure class="color-red-dark">
+            <figcaption>Dark Red<br />#690505</figcaption>
+        </figure>
+
+        <figure class="color-blue-dark">
+            <figcaption>Dark Blue<br />#295079</figcaption>
+        </figure>
+
+        <figure class="color-grey-dark">
+            <figcaption>Dark Grey<br />#47545C</figcaption>
+        </figure>
+
+        <figure class="color-green-dark">
+            <figcaption>Dark Green<br />#182B1D</figcaption>
+        </figure>
+    </section>
+
+    <h2>Natural Colors</h2>
+    <section>
+        <figure class="color-orange">
+            <figcaption>Orange <br /> #EF754E</figcaption>
+        </figure>
+
+        <figure class="color-red">
+            <figcaption>Red<br />#DF7361</figcaption>
+        </figure>
+
+        <figure class="color-blue">
+            <figcaption>Blue<br />#007BB8</figcaption>
+        </figure>
+
+        <figure class="color-grey">
+            <figcaption>Grey<br />#C4C4C4</figcaption>
+        </figure>
+
+        <figure class="color-green">
+            <figcaption>Green<br />#66B65D</figcaption>
+        </figure>
+
+    </section>
+
+    <h2>Light Colors</h2>
+    <section>
+        <figure class="color-orange-light">
+            <figcaption>Light Orange <br /> #FFD8B5</figcaption>
+        </figure>
+
+        <figure class="color-red-light">
+            <figcaption>Light Red<br />#DF7361</figcaption>
+        </figure>
+
+        <figure class="color-blue-light">
+            <figcaption>Light Blue<br />#D5F1FF</figcaption>
+        </figure>
+
+        <figure class="color-grey-light">
+            <figcaption>Light Grey<br />#EBEBEB</figcaption>
+        </figure>
+
+        <figure class="color-green-light">
+            <figcaption>Light Green<br />#E9E9C9</figcaption>
+        </figure>
+    </section>
+
+    </section>
+
+    <h2>Inputs</h2>
+    <section>
+        <h3>Default State</h3>
+        <input type="text" placeholder="text input" />
+        <input type="password" placeholder="password input" />
+        <br /><br />
+
+        <textarea>The relevant section of Cicero as printed in the source is reproduced below with fragments used in Lorem ipsum underlined. Letters in brackets were added to Lorem ipsum and were not present in the source text</textarea>
+        <pre>
+            <span>Border Color: Grey Light</span>
+            <span>Font: .8rem Grey</span>
+            <span>Padding: top / bottom .8rem  right / left 1.2 rem</span>
+            <span>Text Area:	Min Width: 24.2rem,	Min Height: 10rem;	Line height: 1.5rem;</span>
+        </pre>
+
+        <h3>ReadOnly State</h3>
+        <input type="text" placeholder="text input" disabled />
+        <input type="password" placeholder="password input" disabled />
+        <br /><br />
+
+        <textarea
+            disabled>The relevant section of Cicero as printed in the source is reproduced below with fragments used in Lorem ipsum underlined. Letters in brackets were added to Lorem ipsum and were not present in the source text</textarea>
+        <pre>
+
+<span>Opacity:80%</span></pre>
+
+        <h3>Focus State</h3>
+        <input type="text" placeholder="Text input" class="focus" />&nbsp;
+        <input type="password" placeholder="Password input" class="focus" />
+        <br /><br />
+        <textarea
+            class="focus">The relevant section of Cicero as printed in the source is reproduced below with fragments used in Lorem ipsum underlined. Letters in brackets were added to Lorem ipsum and were not present in the source text</textarea>
+        <pre>
+
+<span>Box Shadow: 0px 0px 1px 2px Color Blue Light</span></pre>
+
+
+        <h3>Validation Style OK / Passed</h3>
+        <input type="text" placeholder="Text input" class="focus validation-ok" />&nbsp;
+        <input type="password" placeholder="Password input" class="focus validation-ok" />
+        <br /><br />
+        <textarea
+            class="focus validation-ok">The relevant section of Cicero as printed in the source is reproduced below with fragments used in Lorem ipsum underlined. Letters in brackets were added to Lorem ipsum and were not present in the source text</textarea>
+        <pre>
+
+<span>Border Color Green;</span></pre>
+
+        <h3>Validation Style Wrong / Failed</h3>
+        <input type="text" placeholder="Text input" class="focus validation-fail" />&nbsp;
+        <input type="password" placeholder="Password input" class="focus validation-fail" />
+        <br /><br />
+        <textarea
+            class="focus validation-fail">The relevant section of Cicero as printed in the source is reproduced below with fragments used in Lorem ipsum underlined. Letters in brackets were added to Lorem ipsum and were not present in the source text</textarea>
+        <pre>
+
+<span>Border Color Red;</span></pre>
+
+    </section>
+
+
+    <h2>Messages</h2>
+    <section>
+        <h3>Message Success</h3>
+        <div class="message-bar success"> Validation message ok</div>
+        <h3>Message Fail</h3>
+        <div class="message-bar fail"> Validation message fail</div>
+        <h3>Message Information</h3>
+        <div class="message-bar info"> Validation message info</div>
+        <h3>Message Warning</h3>
+        <div class="message-bar warning"> Validation message warning</div>
+    </section>
+
+    <h2>Buttons</h2>
+    <section>
+        <h3>Default state</h3>
+        <input type="button" value="Default Button">
+        <input type="button" value="Accept" class="accept">
+        <input type="button" value="Cancel" class="cancel">
+        <input type="button" value="Remove" class="remove">
+
+        <h3>Hover state</h3>
+        <input type="button" value="Default Button" class="hover">
+        <input type="button" value="Accept" class="accept hover">
+        <input type="button" value="Cancel" class="cancel hover">
+        <input type="button" value="Remove" class="remove hover">
+
+        <h3>Pressed state</h3>
+        <input type="button" value="Default Button" class="focus">
+        <input type="button" value="Accept" class="accept focus">
+        <input type="button" value="Cancel" class="cancel focus">
+        <input type="button" value="Remove" class="remove focus">
+
+        <h3>Disabled state</h3>
+        <input type="button" value="Default Button" disabled>
+        <input type="button" value="Accept" class="accept" disabled>
+        <input type="button" value="Cancel" class="cancel" disabled>
+        <input type="button" value="Remove" class="remove" disabled>
+
+    </section>
+
+
+    <h2>Images</h2>
+    <section>
+        <figure class="simple-image"></figure>
+        <pre>
+
+<span>Border Color: Dark with shadow</span>		
+<span>Usage: As a container for any image</span></pre>
+        <figure class="profile-image">
+            <img src="" />
+        </figure>
+        <pre>
+
+<span>Border Color: Dark with shadow</span>		
+<span>Radius: 50%</span>		
+<span>Usage: As a container for profile images </span></pre>
+    </section>
+
+
+    <h2>Typography</h2>
+    <section>
+        <h1>Main title</h1>
+        <pre>
+
+<span>Font Size: 1.5rem / 24px</span>
+<span>Color: Orange</span>		
+<span>Usage: As a main title of the page</span>
+<span>Border Bottom: 1px #f0f0f0</span></pre>
+
+        <h2>Subtitle</h2>
+        <pre>
+
+<span>Font Size: 1.2rem / 19px</span>
+<span>Color: Grey</span>		
+<span>Usage: As a secondary title of the page</span></pre>
+        <h3>Other titles</h3>
+
+        <pre>
+
+<span>Font Size: 1rem / 16px</span>
+<span>Color: Dark</span>		
+<span>Usage: As an internat title of a section or a title for a definition</span>
+</pre>
+
+        <h3>Paragraph text :</h3>
+        <p>The relevant section of Cicero as printed in the source is reproduced below with fragments used in Lorem
+            ipsum
+            underlined. Letters in brackets were added to Lorem ipsum and were not present in the source text:</p>
+        <pre>
+
+<span>Font Size: .8rem / 13px</span>
+<span>Color: Dark</span>		
+<span>Usage: As an internat title of a section or a title for a definition</span></pre>
+    </section>
+
+    <h2>Responsive Layout</h2>
+    <section>
+        <div class="wrapper">
+            <header class="header">Header</header>
+            <article class="main">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+                    amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </article>
+            <aside class="aside aside-1">Aside 1</aside>
+            <footer class="footer">Footer</footer>
+        </div>
+    </section>
+<script type="text/javascript" src="./assets/js/bundle.js"></script></body>
+
+</html>

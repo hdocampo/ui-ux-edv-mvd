@@ -1,23 +1,45 @@
-<html lang="ru">
+<html lang="es">
 <head>
     <title>Boilerplate</title>
 <link href="./assets/css/styles.css" rel="stylesheet"></head>
 <body>
-<header>HEADER START</header>
-<img src="assets/img/cat.jpg" width="100" alt="">
-<header>HEADER END</header>
-
-<div class="grid-row">
-    <div class="grid-col--5">
-        <div class="cat">
-            <img src="assets/img/cat.jpg" width="100" alt="">
-            <div class="cat__photo"></div>
-            <div class="cat__title">Cat</div>
-        </div>
-    </div>
-</div>
+<div class="edv-app">
+    <header class="edv-nav__header edv-container">
+        <nav class="edv-nav__bar">
+            <div class="edv-nav__logo"><a href="#" title="Go to Homepage"><img
+                        src="https://confluence.endava.com/download/attachments/557057/atl.site.logo?version=2&modificationDate=1457536967450&api=v2"
+                        alt="endava logo" /></a></div>
+            <div class="edv-nav__links">
+                <ul class="edv-nav__list">
+                    <li class="edv-nav__item">
+                        <a href="#" class="edv-nav__link">About</a>
+                        <a href="#" class="edv-nav__link">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main class="edv-content edv-container">
+    <ul class="edv-card__list">
+        <li class="edv-card__item">
+            <div class="edv-card__image">
+                <img src="https://confluence.endava.com/download/attachments/95815542/ui-ux-comunity-banner.jpg?version=5&modificationDate=1581016734700&api=v2" 
+                    alt="one cool description for this img"
+                    class="edv-card__image"
+                />
+                <div class="edv-card__title">
+                    <h3>Hi man, this is my title</h3>
+                </div>
+                <div class="edv-card__description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error illo atque sint, vero impedit nemo quia quaerat quasi necessitatibus, praesentium sapiente, fugit quas harum animi officiis aliquid corporis qui!</p>
+                </div>
+                <button class="edv-card__button edv-button"></button>
+            </div>
+        </li>
+    </ul>
+</main>
 <a href="products.html">products.html</a>
-<footer>footer</footer>
-
+    <footer>footer</footer>
+</div>
 <script type="text/javascript" src="./assets/js/bundle.js"></script></body>
 </html>
